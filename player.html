@@ -35,9 +35,7 @@
                 margin: 0px;
 
             }
-            .content_container > :first-child {
-                grid-column: 1 / -1; /* Span the first item across all columns */
-             }
+            
 
              @media (max-width: 760px){
               video,.video {
@@ -84,6 +82,21 @@
                 }
               }
 
+              #download{
+                height: 45px;
+                width: 50%; 
+                color: #fff; 
+                cursor: pointer; 
+                font-size: 17px; 
+                display: block;
+                margin: auto; 
+                padding: 15px 0; 
+                border-radius: 5px; 
+                background:purple; 
+                transition: opacity 0.15s ease; 
+
+              }
+
              
 
   </style>
@@ -91,12 +104,16 @@
 
 
   
-  <script src="js/player.js">
-    
-  </script>
+ <script src="js/player.js">
+
+ </script>
 </head>
 
 <body>
+
+  <div class="video_player">
+
+  </div>
 
 
     <div class="content_container" id="content_container">

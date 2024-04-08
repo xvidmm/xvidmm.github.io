@@ -5,42 +5,29 @@
         <title>Player</title>
         <meta name="keywords" content="xvideos,myanmar hidden cam,myanmar outdoor,"/>
         <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3/dist/css/bootstrap.min.css">
+
 
   <style>
-     body{
-                padding: 0px;
-                margin: 5px;
-                background-color: gray;
-            }
-            .content_container {
-                display: grid;
-                grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
-                gap:15px;
+                  body{
+                  width: 100%;
+                  height: 100%;
+                  
+              }
+              .content_container {
+                  display: grid;
+                  grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+                  gap:15px;
+                  margin: auto;
+                  
 
-            }
-           
-            .item p{
-                display: inline;
-            }
-            
-            .duration {
-                background-color: rgb(32, 21, 39);
-                color: wheat;
-                font-weight: 5px;
-            
-            }
-            .item img{
-                width: 100%;
-                height: 180px;
-                margin: 0px;
-
-            }
+              }
+          
             
 
              @media (max-width: 760px){
               video,.video {
                 width: 100%;
-                height: 200px;
                 
               }
 
@@ -49,7 +36,6 @@
 
               video ,.video {
                 width: 80%;
-                height: 600px;
                 margin-left:10% ;
 
               }
@@ -57,46 +43,8 @@
              }
 
 
-             .item_ld {
-                position: relative;
-                overflow: hidden; /* Add this line to hide the overflowing shimmer element */
-              }
 
-              .item_ld::after {
-                content: "";
-                position: absolute;
-                top: 0;
-                left: -200px; /* Adjust the initial position to be outside the container */
-                width: 200px;
-                height: 100%;
-                background: linear-gradient(to right, transparent 0%, #a89e9e 50%, transparent 100%);
-                animation: shimmer 1s infinite linear;
-              }
-
-              @keyframes shimmer {
-                0% {
-                  transform: translateX(-100%); /* Move the shimmer element from left to right */
-                }
-                100% {
-                  transform: translateX(100%); /* Move the shimmer element from right to left */
-                }
-              }
-
-              #download{
-                height: 45px;
-                width: 50%; 
-                color: #fff; 
-                cursor: pointer; 
-                font-size: 17px; 
-                display: block;
-                margin: auto; 
-                padding: 15px 0; 
-                border-radius: 5px; 
-                background:purple; 
-                transition: opacity 0.15s ease; 
-
-              }
-
+             
              
 
   </style>
@@ -109,70 +57,236 @@
  </script>
 </head>
 
-<body>
+<body class="bg-dark">
 
-  <div class="video_player">
+  <div id="main" class="container-fluid p-0 position-relative">
+
+    <header>
+      <nav class="navbar  bg-secondary ">
+        <div class="container-fluid">
+          <span class="navbar-brand text-light mb-0 h1">Home</span>
+          <div class="d-flex social"> 
+            <a href="https://t.me/xvidMM" >              
+              <img src="telegram.svg" class="telegram">
+            </a></div>
+        </div>
+      </nav>
+    </header>
+
+  
+
+
+
+      <div  class="video_player video" id="video">
+        
+      </div>
+      <div class="buttons py-2">
+        <a href="javascript:alert('tutorialမတင်ရသေးပါ')" class="btn btn-secondary mx-auto outline">
+        ဒေါင်းလော့ ဆွဲနည်း 
+        </a>
+        <button class="btn btn-primary" id="download" onClick="download()">Download
+
+        </button>
+      </div>
+      
+      <div class="content_container mx-auto p-2" id="content_container">
+
+
+        <div class="card item">
+          <div class="card-body">
+          
+             <div class="placeholder-glow">
+            <span class="placeholder col-12" style="height:200px"></span>
+          </div>
+          
+          
+          <div class="info placeholder-glow"> <p class="name placeholder col-12"></p>
+          <p class="placeholder col-12"> </p>
+          <span class="metadata"> <span class="placeholder col-2"> </span><span>
+                           
+                         </div>
+                         </div>
+          </div><div class="card item">
+            <div class="card-body">
+            
+               <div class="placeholder-glow">
+              <span class="placeholder col-12" style="height:200px"></span>
+            </div>
+            
+            
+            <div class="info placeholder-glow"> <p class="name placeholder col-12"></p>
+            <p class="placeholder col-12"> </p>
+            <span class="metadata"> <span class="placeholder col-2"> </span><span>
+                             
+                           </div>
+                           </div>
+            </div><div class="card item">
+              <div class="card-body">
+              
+                 <div class="placeholder-glow">
+                <span class="placeholder col-12" style="height:200px"></span>
+              </div>
+              
+              
+              <div class="info placeholder-glow"> <p class="name placeholder col-12"></p>
+              <p class="placeholder col-12"> </p>
+              <span class="metadata"> <span class="placeholder col-2"> </span><span>
+                               
+                             </div>
+                             </div>
+              </div><div class="card item">
+                <div class="card-body">
+                
+                   <div class="placeholder-glow">
+                  <span class="placeholder col-12" style="height:200px"></span>
+                </div>
+                
+                
+                <div class="info placeholder-glow"> <p class="name placeholder col-12"></p>
+                <p class="placeholder col-12"> </p>
+                <span class="metadata"> <span class="placeholder col-2"> </span><span>
+                                 
+                               </div>
+                               </div>
+                </div><div class="card item">
+                  <div class="card-body">
+                  
+                     <div class="placeholder-glow">
+                    <span class="placeholder col-12" style="height:200px"></span>
+                  </div>
+                  
+                  
+                  <div class="info placeholder-glow"> <p class="name placeholder col-12"></p>
+                  <p class="placeholder col-12"> </p>
+                  <span class="metadata"> <span class="placeholder col-2"> </span><span>
+                                   
+                                 </div>
+                                 </div>
+                  </div><div class="card item">
+                    <div class="card-body">
+                    
+                       <div class="placeholder-glow">
+                      <span class="placeholder col-12" style="height:200px"></span>
+                    </div>
+                    
+                    
+                    <div class="info placeholder-glow"> <p class="name placeholder col-12"></p>
+                    <p class="placeholder col-12"> </p>
+                    <span class="metadata"> <span class="placeholder col-2"> </span><span>
+                                     
+                                   </div>
+                                   </div>
+                    </div><div class="card item">
+                      <div class="card-body">
+                      
+                         <div class="placeholder-glow">
+                        <span class="placeholder col-12" style="height:200px"></span>
+                      </div>
+                      
+                      
+                      <div class="info placeholder-glow"> <p class="name placeholder col-12"></p>
+                      <p class="placeholder col-12"> </p>
+                      <span class="metadata"> <span class="placeholder col-2"> </span><span>
+                                       
+                                     </div>
+                                     </div>
+                      </div><div class="card item">
+                        <div class="card-body">
+                        
+                           <div class="placeholder-glow">
+                          <span class="placeholder col-12" style="height:200px"></span>
+                        </div>
+                        
+                        
+                        <div class="info placeholder-glow"> <p class="name placeholder col-12"></p>
+                        <p class="placeholder col-12"> </p>
+                        <span class="metadata"> <span class="placeholder col-2"> </span><span>
+                                         
+                                       </div>
+                                       </div>
+                        </div><div class="card item">
+                          <div class="card-body">
+                          
+                             <div class="placeholder-glow">
+                            <span class="placeholder col-12" style="height:200px"></span>
+                          </div>
+                          
+                          
+                          <div class="info placeholder-glow"> <p class="name placeholder col-12"></p>
+                          <p class="placeholder col-12"> </p>
+                          <span class="metadata"> <span class="placeholder col-2"> </span><span>
+                                           
+                                         </div>
+                                         </div>
+                          </div><div class="card item">
+                            <div class="card-body">
+                            
+                               <div class="placeholder-glow">
+                              <span class="placeholder col-12" style="height:200px"></span>
+                            </div>
+                            
+                            
+                            <div class="info placeholder-glow"> <p class="name placeholder col-12"></p>
+                            <p class="placeholder col-12"> </p>
+                            <span class="metadata"> <span class="placeholder col-2"> </span><span>
+                                             
+                                           </div>
+                                           </div>
+                            </div><div class="card item">
+                              <div class="card-body">
+                              
+                                 <div class="placeholder-glow">
+                                <span class="placeholder col-12" style="height:200px"></span>
+                              </div>
+                              
+                              
+                              <div class="info placeholder-glow"> <p class="name placeholder col-12"></p>
+                              <p class="placeholder col-12"> </p>
+                              <span class="metadata"> <span class="placeholder col-2"> </span><span>
+                                               
+                                             </div>
+                                             </div>
+                              </div><div class="card item">
+                                <div class="card-body">
+                                
+                                   <div class="placeholder-glow">
+                                  <span class="placeholder col-12" style="height:200px"></span>
+                                </div>
+                                
+                                
+                                <div class="info placeholder-glow"> <p class="name placeholder col-12"></p>
+                                <p class="placeholder col-12"> </p>
+                                <span class="metadata"> <span class="placeholder col-2"> </span><span>
+                                                 
+                                               </div>
+                                               </div>
+                                </div><div class="card item">
+                                  <div class="card-body">
+                                  
+                                     <div class="placeholder-glow">
+                                    <span class="placeholder col-12" style="height:200px"></span>
+                                  </div>
+                                  
+                                  
+                                  <div class="info placeholder-glow"> <p class="name placeholder col-12"></p>
+                                  <p class="placeholder col-12"> </p>
+                                  <span class="metadata"> <span class="placeholder col-2"> </span><span>
+                                                   
+                                                 </div>
+                                                 </div>
+                                  </div>
+
+      
+      </div>
+
+
+
+
+    
 
   </div>
-
-
-    <div class="content_container" id="content_container">
-  
-      <div class="item_ld">
-        <div class="shimmer video"></div>
-         </div>
-
-      
-      <div class="item_ld">
-         <div class="shimmer" style="height: 200px;background-color: white;"></div>
-          </div>
-
-          <div class="item_ld">
-            <div class="shimmer" style="height: 200px;background-color: white;"></div>
-             </div>
-
-             <div class="item_ld">
-              <div class="shimmer" style="height: 200px;background-color: white;"></div>
-               </div>
-
-               <div class="item_ld">
-                <div class="shimmer" style="height: 200px;background-color: transparent;"></div>
-                 </div>
-       
-                 <div class="item_ld">
-                   <div class="shimmer" style="height: 200px;background-color: transparent;"></div>
-                    </div>
-       
-                    <div class="item_ld">
-                     <div class="shimmer" style="height: 200px;background-color: transparent;"></div>
-                      </div>
-
-                      <div class="item_ld">
-                        <div class="shimmer" style="height: 200px;background-color:transparent;"></div>
-                         </div>
-
-                         <div class="item_ld">
-                          <div class="shimmer" style="height: 200px;background-color:transparent;"></div>
-                           </div>
-       </div>
-
-      
-
-       
-          
-   
-           
-       
-
-        
-
-
-  
-
-  
-
-
-</body>
+ 
+ </body>
 
 
 </html>

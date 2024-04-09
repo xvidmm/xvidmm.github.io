@@ -22,6 +22,20 @@
                   
 
               }
+              .buttons{
+                display: none;
+                position: relative;
+              }
+              
+              .buttons a {
+                position: absolute;
+                left: 50px;
+
+              }
+              .buttons button{
+                position: absolute;
+               right:50px;
+              }
           
             
 
@@ -64,7 +78,7 @@
     <header>
       <nav class="navbar  bg-secondary ">
         <div class="container-fluid">
-          <span class="navbar-brand text-light mb-0 h1">Home</span>
+          <a href="https://xvidmm.github.io" class="navbar-brand text-light mb-0 h1">Home</a>
           <div class="d-flex social"> 
             <a href="https://t.me/xvidMM" >              
               <img src="telegram.svg" class="telegram">
@@ -81,7 +95,7 @@
         
       </div>
       <div class="buttons py-2">
-        <a href="javascript:alert('tutorialမတင်ရသေးပါ')" class="btn btn-secondary mx-auto outline">
+        <a href="javascript:alert('tutorialမတင်ရသေးပါ')" class="btn btn-secondary">
         ဒေါင်းလော့ ဆွဲနည်း 
         </a>
         <button class="btn btn-primary" id="download" onClick="download()">Download
@@ -89,7 +103,7 @@
         </button>
       </div>
       
-      <div class="content_container mx-auto p-2" id="content_container">
+      <div class="content_container mx-auto p-2" id="content_container" style="margin-top:50px;">
 
 
         <div class="card item">

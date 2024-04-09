@@ -38,6 +38,19 @@ body{
   height: 35px;
 }
 
+.pagination{
+   position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.tags{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+  gap:4px;
+
+
+}
+
 @media screen and  (min-width: 500px) {
   .myanmar_poster{
    height:250px;
